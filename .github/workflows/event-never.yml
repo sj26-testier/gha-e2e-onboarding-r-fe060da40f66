@@ -1,0 +1,1 @@
+{"name": "event-never", "on": {"push": {"branches": ["event-*"], "paths": ["never/**"]}, "pull_request": {"branches": ["main"], "paths": ["never/**"]}}, "permissions": {}, "jobs": {"observe": {"runs-on": "ubuntu-latest", "timeout-minutes": 2, "steps": [{"run": "printf \"EVENT=%s SHA=%s REF=%s\\n\" \"$GITHUB_EVENT_NAME\" \"$GITHUB_SHA\" \"$GITHUB_REF\""}]}}}
